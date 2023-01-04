@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S4_clases.vistas.inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="VENTANA DE REPASO" TextColor="Red"  FontSize="20" HorizontalTextAlignment="Center" />
+            <Image Source="https://univercimas.com/wp-content/uploads/2021/05/Logo-de-la-Universidad-Tecnologica-Israel-UTI.png"/>
+            <Image Source="imagen.png"/>
+            <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtusuario" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtpassword" Placeholder="Ingrese el password"  IsPassword="True" Grid.Row="1" Grid.Column="1" />
+
+            </Grid>
+            <Button x:Name="btniniciar" Text="INICIAR" Clicked="btniniciar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
